@@ -36,3 +36,9 @@ nav a:hover {
     margin: 0 auto;
     padding: 15px;
 }
+
+#profile-picture {
+    float: right;
+    margin-left: 15px;
+    width: 200px; /* Adjust size as needed */
+}
