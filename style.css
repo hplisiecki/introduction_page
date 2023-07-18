@@ -40,6 +40,10 @@ nav a:hover {
     padding: 1em;  /* Add some padding */
 }
 
+.list-group-item {
+    background-color: #555; /* Adjust color to desired level of "brighter grey" */
+    color: white; /* Adjust text color if necessary */
+}
 
 .container {
     max-width: 960px;
