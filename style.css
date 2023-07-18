@@ -30,8 +30,11 @@ nav,
 
 
 nav {
-    margin: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15px;
 }
+
 
 nav a {
     color: #fff;
