@@ -31,7 +31,7 @@ nav a:hover {
     color: #ddd;
 }
 
-.container {
+.card-content {
     max-width: 960px;
     margin: 0 auto;
     padding: 15px;
