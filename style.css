@@ -15,6 +15,7 @@ header {
 header h1,
 nav,
 .container h2,
+.container_main h2,
 .container_main .interests-content {
     text-align: center;
 }
