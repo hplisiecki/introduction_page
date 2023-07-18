@@ -15,7 +15,7 @@ header {
 header h1,
 nav,
 .container h2,
-.container .interests-content {
+.container_main .interests-content {
     text-align: center;
 }
 .interest-tag {
@@ -64,7 +64,13 @@ nav a:hover {
     margin: 0 auto;
     padding: 15px;
 }
-
+.container_main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+    transition: opacity .25s ease-out;
+    opacity: 0;  /* Initially hidden */
+}
 .card_2_content {
     max-width: 960px;
     margin: 0 auto;
@@ -134,15 +140,6 @@ th {
    visibility: hidden;
 }
 
-.main-content {
-   opacity: 1;
-   transition: opacity .25s ease-out;
-   visibility: visible;
-}
 
-.main-content.hide {
-   opacity: 0;
-   visibility: hidden;
-}
 
 
