@@ -18,6 +18,16 @@ nav,
 .container .interests-content {
     text-align: center;
 }
+.interest-tag {
+    display: inline-block;
+    background-color: #666;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
 
 nav {
     margin: 0 15px;
