@@ -36,7 +36,7 @@ nav a:hover {
 
 .custom-card {
     background-color: #333;
-    color: black; /* You might also want to change the text color so it's readable on the dark background */
+    color: white; /* You might also want to change the text color so it's readable on the dark background */
     padding: 1em;  /* Add some padding */
 }
 
