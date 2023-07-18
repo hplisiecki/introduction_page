@@ -24,7 +24,7 @@
     </header>
 
     <!-- Specific content for the Work Experience page -->
-    <div class="container">
+    <div class="container_main">
         <h2>Work Experience</h2>
         <table>
             <thead>
@@ -88,5 +88,22 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.container_main').css('opacity', '1');
+    
+            $('a').click(function(e) {
+                e.preventDefault();
+                newLocation = this.href;
+    
+                $('.container_main').css('opacity', '0');
+    
+                setTimeout(function(){
+                    window.location = newLocation;
+                }, 250);
+            });
+        });
+    </script>
+
 </body>
 </html>
