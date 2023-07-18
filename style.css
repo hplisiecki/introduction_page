@@ -141,6 +141,9 @@ th {
    visibility: hidden;
 }
 
+.custom-card, .custom_2 {
+    border-radius: 20px;
+}
 
 
 
