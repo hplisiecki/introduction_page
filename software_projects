@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hubert Plisiecki - Software Projects</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Hubert Plisiecki</h1>
+            <nav>
+                <a href="/introduction_page">Home</a>
+                <a href="/introduction_page/software_projects.html">Software Projects</a>
+                <a href="/introduction_page/experience.html">Work Experience</a>
+                <a href="/introduction_page/publications.html">Publications</a>
+                <a href="/introduction_page/conferences.html">Conferences</a>
+                <a href="/introduction_page/projects.html">Ongoing Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container_main">
+        <h2>Software Projects</h2>
+
+        <!-- List of projects -->
+        <div class="project">
+            <h3>Document Retrieval for Social Sciences Python Package “retfidf”</h3>
+            <a href="https://github.com/hplisiecki/document-retrieval-for-social-sciences">GitHub</a>
+            <p>Developed a Python tool for retrieving documents from large text corpora.</p>
+            <p><strong>Technical Stack:</strong> Python, Word2Vec, TF-IDF</p>
+        </div>
+        
+        <div class="project">
+            <h3>Questionnaire GAN for Online Survey Data Integrity</h3>
+            <a href="https://github.com/hplisiecki/questionnaire_gan">GitHub</a>
+            <p>Developed a GAN-based solution to simulate and detect fake responses in online surveys. Introduced a data-independent mechanism for fake response detection using overtrained discriminators.</p>
+            <p><strong>Technical Stack:</strong> Python, Generative Adversarial Networks (GANs), Machine Learning.</p>
+        </div>
+
+        <div class="project">
+            <h3>Emotion Decomposition via Word Embeddings</h3>
+            <a href="https://github.com/hplisiecki/emotion_topology">GitHub</a>
+            <p>Extracted emotional dimensions from Reddit text using advanced word embeddings. Revealed patterns and clusters in emotional vectors through PCA visualizations.</p>
+            <p><strong>Technical Stack:</strong> Python, NLP, PCA, Word Embeddings (Doc2Vec)</p>
+        </div>
+
+        <div class="project">
+            <h3>Affective Norms Extrapolation using Transformers</h3>
+            <a href="https://github.com/hplisiecki/affect_prediction">GitHub</a>
+            <p>Developed a state-of-the-art transformer-based neural network architecture for extrapolating semantic and emotional norms across multiple languages. Achieved superior correlations with human judgments, improving on prior models by Δr = 0.1 on average, and introduced a method for unsupervised control in stimuli selection. The project was accepted for publication in Behavior Research Methods.</p>
+            <p><strong>Technical Stack:</strong> Python, Transformers, Machine Learning, Natural Language Processing.</p>
+        </div>
+
+        <div class="project">
+            <h3>Statcheck: Python Implementation for Statistical Checking</h3>
+            <a href="https://github.com/hplisiecki/statcheck_python">GitHub</a>
+            <p>Developed a Python implementation of the original R package statcheck by Michèle B. Nuijten, enhancing accessibility for the Python community. The tool automatically extracts NHST results from articles, recomputes p-values, and detects inconsistencies. Supports various statistical tests, including t-tests, F-tests, and z-tests, when reported in APA style. Main applications include manuscript self-checks, aiding peer review processes, and research, such as investigating predictors of statistical inconsistencies.</p>
+            <p><strong>Technical Stack:</strong> Python, Text Processing, Statistical Analysis</p>
+        </div>
+
+        <div class="project">
+            <h3>Meta Yourself Tool (Shiny App)</h3>
+            <a href="https://github.com/hplisiecki/meta_yourself">Shiny App</a>
+            <p>Built an application for user-friendly exploratory bias detection in meta-analyses, which allows users to assess the reliability of scientific literature via keyword searches.</p>
+            <p><strong>Technical Stack:</strong> R, Shiny, Meta-Analysis.</p>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.container_main').css('opacity', '1');
+
+            $('a').click(function(e) {
+                e.preventDefault();
+                newLocation = this.href;
+
+                $('.container_main').css('opacity', '0');
+
+                setTimeout(function() {
+                    window.location = newLocation;
+                }, 250);
+            });
+        });
+    </script>
+</body>
+
+</html>
