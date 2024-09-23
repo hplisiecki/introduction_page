@@ -146,4 +146,14 @@ th {
 }
 
 
+/* Multi-column list group items */
+.list-group-item .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.list-group-item .col-md-6, .list-group-item .col-md-4, .list-group-item .col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
+}
 
