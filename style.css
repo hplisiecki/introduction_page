@@ -148,33 +148,3 @@ th {
 
 
 
-/* Multi-column list group items */
-.list-group-item .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.list-group-item .col-md-6, .list-group-item .col-md-4, .list-group-item .col-md-3 {
-    padding-left: 10px; /* Adds space inside each column */
-    padding-right: 10px; /* Adjust as necessary for your design */
-}
-
-/* Improve visibility on smaller screens */
-@media (max-width: 768px) {
-    .list-group-item .col-md-6, .list-group-item .col-md-4, .list-group-item .col-md-3 {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-}
-
-/* Optional: Add a subtle border between columns */
-.list-group-item .col-md-6:not(:last-child), 
-.list-group-item .col-md-4:not(:last-child), 
-.list-group-item .col-md-3:not(:last-child) {
-    border-right: 1px solid #444; /* Change color as needed */
-}
-
-/* Hover effects for interactivity */
-.list-group-item:hover {
-    background-color: #666; /* Darken on hover for better interaction feedback */
-}
